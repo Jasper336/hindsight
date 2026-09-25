@@ -1,4 +1,4 @@
-{{
+{
   "version": "1",
   "bank": {
     "reflect_mission": "You are the long-term memory for an always-on personal assistant that reaches the user across many surfaces (chat, email, voice, iMessage, WhatsApp, Signal, Discord). Help it feel like it truly knows the user and can act proactively by recalling their preferences, routines, schedule, the people in their life, and what they're currently working toward.",
@@ -55,7 +55,7 @@
       "priority": 7
     }
   ]
-}
+},
   "templates": [
     {
       "id": "conversation",
@@ -82,7 +82,7 @@
     {
       "id": "coding-agent",
       "name": "Coding Agent",
-      "description": "For coding assistants and agents. Remembers project architecture, technical decisions, coding patterns, review preferences, and workflow across sessions. High literalism for precise technical recall.",
+      "description": "For coding assistants and agents. Remembers project architecture, technical decisions, coding patterns, review preferences, and workflow across sessions. High literalism for technical accuracy.",
       "category": "coding",
       "integrations": [
         "claude-code",
@@ -107,7 +107,7 @@
     {
       "id": "business-executive",
       "name": "Business Executive",
-      "description": "For executives and operators tracking clients, sales opportunities, project delivery, and product development from meeting transcripts. Extracts decisions, commitments, owners, and status changes, and builds pipeline, delivery, product, and relationship mental models. High literalism for precise recall of numbers, dates, and commitments.",
+      "description": "For executives and operators tracking clients, sales opportunities, project delivery, and product development from meeting transcripts. Extracts decisions, commitments, owners, and next steps.",
       "category": "business",
       "integrations": [
         "hermes",
@@ -122,7 +122,7 @@
     {
       "id": "hermes-gateway-bot",
       "name": "Gateway / Community Bot",
-      "description": "For agents that talk to many people across chat platforms (Telegram, Discord, Slack). Keeps per-person profiles distinct, learns each community's norms, and tracks open threads across users.",
+      "description": "For agents that talk to many people across chat platforms (Telegram, Discord, Slack). Keeps per-person profiles distinct, learns each community's norms, and tracks open threads.",
       "category": "chat",
       "integrations": [
         "langgraph",
@@ -135,7 +135,7 @@
     {
       "id": "hermes-orchestrator",
       "name": "Multi-Agent Orchestrator",
-      "description": "For orchestrations of specialized agents. Remembers decisions and their rationale, ownership boundaries, hand-offs, and how past escalations were resolved. High literalism and skepticism for precise coordination.",
+      "description": "For orchestrations of specialized agents. Remembers decisions and their rationale, ownership boundaries, hand-offs, and how past escalations were resolved. High literalism and skepticism.",
       "category": "orchestration",
       "integrations": [
         "langgraph",
@@ -161,7 +161,7 @@
     {
       "id": "research-assistant",
       "name": "Research Assistant",
-      "description": "For research, monitoring, and knowledge-work agents that write briefings and digests or maintain a second brain. Learns the user's interests, tracks what to ignore to sharpen curation, and compounds durable knowledge with sources over time.",
+      "description": "For research, monitoring, and knowledge-work agents that write briefings and digests or maintain a second brain. Learns the user's interests, tracks what to ignore to sharpen relevance, and remembers open questions.",
       "category": "research",
       "integrations": [
         "obsidian",
@@ -174,7 +174,7 @@
     {
       "id": "plain-retrieval",
       "name": "Plain Retrieval",
-      "description": "Use Hindsight as a conventional vector store: chunks in, hybrid search out, no LLM on retain or recall. Trades facts, entities, graph and temporal structure for the lowest cost and latency.",
+      "description": "Use Hindsight as a conventional vector store: chunks in, hybrid search out, no LLM on retain or recall. Trades facts, entities, graph and temporal structure for the lowest cost.",
       "category": "retrieval",
       "integrations": [
         "litellm",
